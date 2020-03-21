@@ -10,9 +10,10 @@ import SwiftUI
 
 struct ContentView: View {
 //    在结构体ContentView里面，在body闭包的上面添加如下属性:
-    let rTarget = Double.random(in: 0..<1)
-    let gTarget = Double.random(in: 0..<1)
-    let bTarget = Double.random(in: 0..<1)
+    @State var rTarget = Double.random(in: 0..<1)
+    @State var gTarget = Double.random(in: 0..<1)
+    @State var bTarget = Double.random(in: 0..<1)
+    
     @State var rGuess: Double
     @State var gGuess: Double
     @State var bGuess: Double
@@ -44,7 +45,15 @@ struct ContentView: View {
                     }
                   }
             }
-//            Text("Hit me button")
+            
+            Button(action:{
+                self.rTarget =  Double.random(in: 0..<1)
+                self.gTarget =  Double.random(in: 0..<1)
+                self.bTarget =  Double.random(in: 0..<1)
+                        
+                    }){
+                        Text("Change target color")
+                    }
             Button(action:{
                 self.showAlert = true
                 
@@ -82,7 +91,14 @@ struct ContentView: View {
         let rDiff = rGuess - rTarget
         let gDiff = gGuess - gTarget
         let bDiff = bGuess - bTarget
-        let diff = sqrt(rDiff * gDiff + bDiff*bDiff + gDiff*gDiff)
+          print("rDiff is   \(rDiff)" )
+          print("gDiff is   \(gDiff)" )
+          print("bDiff is   \(bDiff)" )
+        print("----------" )
+        print("before sqrt is   \(rDiff * gDiff + bDiff*bDiff + gDiff*gDiff)" )
+        let diff = sqrt(rDiff * rDiff + bDiff*bDiff + gDiff*gDiff)
+        print("diff is   \(diff)" )
+        print("1-diff is   \(1-diff)" )
         return Int((1.0 - diff) * 100.0 + 0.5)
 
     }
