@@ -9,16 +9,50 @@
 import UIKit
 import CoreData
 
+
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,WXApiDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+//        window?.Boot
+        //向微信注册应用
+          // @param1 微信开发者ID
+          // @param2 应用附加信息，长度不超过1024字节
+//          WXApi.registerApp("wx930d6e916143e08c", withDescription: "wechat")
+          WXApi.registerApp("wx930d6e916143e08c", universalLink: "wechat")
+        
         return true
     }
+    
+     
+       // 这个方法是用于从微信返回第三方App 处理微信通过URL启动App时传递的数据
+       // @param url 微信启动第三方应用时传递过来的URL
+       // @param delegate WXApiDelegate对象，用来接收微信触发的消息。
+       func application(application: UIApplication, handleOpenURL url: URL) -> Bool {
+           if url.scheme == "wx930d6e916143e08c" {
+               WXApi.handleOpen(url, delegate: self)
+           }
+           return true
+       }
 
+       func application(application: UIApplication, openURL url: URL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+           if url.scheme == "wx930d6e916143e08c" {
+               WXApi.handleOpen(url, delegate: self)
+           }
+           return true
+       }
+
+//       func application(app: UIApplication, openURL url: URL, options: [String : AnyObject]) -> Bool {
+//           Tools.logPrint("openURL:\(url.absoluteString)")
+//           if url.scheme == "wxed8b3e67969559b5" {
+//               return WXApi.handleOpen(url, delegate: self)
+//           }
+//           return true
+//       }
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

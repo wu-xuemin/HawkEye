@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C48566F32429ADD3007F89C3 /* BootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48566F22429ADD3007F89C3 /* BootViewController.swift */; };
+		C48C92372428AE650040AAC5 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = C48C92342428AE640040AAC5 /* README.txt */; };
+		C48C92382428AE650040AAC5 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C48C92362428AE640040AAC5 /* libWeChatSDK.a */; };
+		C48C923B2428B3010040AAC5 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C48C923A2428B3010040AAC5 /* libc++.tbd */; };
+		C48C923D2428B30D0040AAC5 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C48C923C2428B30D0040AAC5 /* libsqlite3.0.tbd */; };
+		C48C923F2428B3180040AAC5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C48C923E2428B3180040AAC5 /* libz.tbd */; };
+		C48C92412428B32D0040AAC5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C48C92402428B32D0040AAC5 /* SystemConfiguration.framework */; };
+		C48C92432428B3390040AAC5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C48C92422428B3390040AAC5 /* CoreTelephony.framework */; };
+		C48C92462428BB060040AAC5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C48C92452428BB060040AAC5 /* WebKit.framework */; };
 		C4CCE67F241F78A4009588D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CCE67E241F78A4009588D9 /* AppDelegate.swift */; };
 		C4CCE681241F78A4009588D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CCE680241F78A4009588D9 /* SceneDelegate.swift */; };
 		C4CCE684241F78A4009588D9 /* RGBHawkEye.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4CCE682241F78A4009588D9 /* RGBHawkEye.xcdatamodeld */; };
@@ -36,6 +45,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C48566F22429ADD3007F89C3 /* BootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootViewController.swift; sourceTree = "<group>"; };
+		C48C92322428AE640040AAC5 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		C48C92332428AE640040AAC5 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		C48C92342428AE640040AAC5 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		C48C92352428AE640040AAC5 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		C48C92362428AE640040AAC5 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		C48C923A2428B3010040AAC5 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		C48C923C2428B30D0040AAC5 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		C48C923E2428B3180040AAC5 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		C48C92402428B32D0040AAC5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C48C92422428B3390040AAC5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		C48C92442428B56D0040AAC5 /* RGBHawkEye-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RGBHawkEye-Bridge-Header.h"; sourceTree = "<group>"; };
+		C48C92452428BB060040AAC5 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		C4CCE67B241F78A4009588D9 /* RGBHawkEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGBHawkEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4CCE67E241F78A4009588D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4CCE680241F78A4009588D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +80,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C48C92462428BB060040AAC5 /* WebKit.framework in Frameworks */,
+				C48C92432428B3390040AAC5 /* CoreTelephony.framework in Frameworks */,
+				C48C92412428B32D0040AAC5 /* SystemConfiguration.framework in Frameworks */,
+				C48C923F2428B3180040AAC5 /* libz.tbd in Frameworks */,
+				C48C923D2428B30D0040AAC5 /* libsqlite3.0.tbd in Frameworks */,
+				C48C923B2428B3010040AAC5 /* libc++.tbd in Frameworks */,
+				C48C92382428AE650040AAC5 /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +107,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C48C92312428AE640040AAC5 /* WeichatIosSDK1.8.6.2 */ = {
+			isa = PBXGroup;
+			children = (
+				C48C92322428AE640040AAC5 /* WXApi.h */,
+				C48C92332428AE640040AAC5 /* WXApiObject.h */,
+				C48C92342428AE640040AAC5 /* README.txt */,
+				C48C92352428AE640040AAC5 /* WechatAuthSDK.h */,
+				C48C92362428AE640040AAC5 /* libWeChatSDK.a */,
+			);
+			path = WeichatIosSDK1.8.6.2;
+			sourceTree = "<group>";
+		};
+		C48C92392428B3010040AAC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C48C92452428BB060040AAC5 /* WebKit.framework */,
+				C48C92422428B3390040AAC5 /* CoreTelephony.framework */,
+				C48C92402428B32D0040AAC5 /* SystemConfiguration.framework */,
+				C48C923E2428B3180040AAC5 /* libz.tbd */,
+				C48C923C2428B30D0040AAC5 /* libsqlite3.0.tbd */,
+				C48C923A2428B3010040AAC5 /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C4CCE672241F78A4009588D9 = {
 			isa = PBXGroup;
 			children = (
+				C48C92312428AE640040AAC5 /* WeichatIosSDK1.8.6.2 */,
+				C48C92442428B56D0040AAC5 /* RGBHawkEye-Bridge-Header.h */,
 				C4CCE67D241F78A4009588D9 /* RGBHawkEye */,
 				C4CCE697241F78A6009588D9 /* RGBHawkEyeTests */,
 				C4CCE6A2241F78A6009588D9 /* RGBHawkEyeUITests */,
 				C4CCE67C241F78A4009588D9 /* Products */,
+				C48C92392428B3010040AAC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +158,7 @@
 		C4CCE67D241F78A4009588D9 /* RGBHawkEye */ = {
 			isa = PBXGroup;
 			children = (
+				C48566F22429ADD3007F89C3 /* BootViewController.swift */,
 				C4CCE67E241F78A4009588D9 /* AppDelegate.swift */,
 				C4CCE680241F78A4009588D9 /* SceneDelegate.swift */,
 				C4CCE685241F78A4009588D9 /* ContentView.swift */,
@@ -245,6 +303,7 @@
 			files = (
 				C4CCE68E241F78A6009588D9 /* LaunchScreen.storyboard in Resources */,
 				C4CCE68B241F78A6009588D9 /* Preview Assets.xcassets in Resources */,
+				C48C92372428AE650040AAC5 /* README.txt in Resources */,
 				C4CCE688241F78A6009588D9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +332,7 @@
 				C4CCE67F241F78A4009588D9 /* AppDelegate.swift in Sources */,
 				C4CCE684241F78A4009588D9 /* RGBHawkEye.xcdatamodeld in Sources */,
 				C4CCE686241F78A4009588D9 /* ContentView.swift in Sources */,
+				C48566F32429ADD3007F89C3 /* BootViewController.swift in Sources */,
 				C4CCE681241F78A4009588D9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,7 +430,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -424,7 +484,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -440,14 +500,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"RGBHawkEye/Preview Content\"";
+				DEVELOPMENT_TEAM = HLM6TRGMPV;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = RGBHawkEye/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeichatIosSDK1.8.6.2",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = eservice.RGBHawkEye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "RGBHawkEye-Bridge-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,14 +526,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"RGBHawkEye/Preview Content\"";
+				DEVELOPMENT_TEAM = HLM6TRGMPV;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = RGBHawkEye/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeichatIosSDK1.8.6.2",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = eservice.RGBHawkEye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "RGBHawkEye-Bridge-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
